@@ -13,7 +13,7 @@ hp = HarryPotterActivity(api_key=api_key)
 with st.sidebar:
     page = option_menu(
         "Wizarding Hub",
-        ["Magical World", "Spell Archive", "Wizard Encyclopedia", "The Enchanting Exchange", "About Me"],
+        ["Magical World", "Spell Archive", "Wizard Encyclopedia", "The Enchanting Exchange", "Dumbledore's Army"],
         icons=['magic', 'book', 'person-badge', 'chat-dots', 'person-circle'],
         menu_icon="image/deathly.png", 
         default_index=0,
@@ -28,16 +28,19 @@ else:
         st.markdown("""
         This is the Wizarding Hub, where magic comes alive! 
 
-        ✨ Meet **Wizopedia**, your magical talking book that knows everything about Harry Potter characters! Just enter the name of a wizard or witch, and Wizopedia will share enchanting details and fascinating stories.
+        ✨ **Meet Wizopedia**  
+        Wizopedia is your magical talking book that knows everything about Harry Potter characters! Just enter the name of a wizard or witch, and Wizopedia will share enchanting details and fascinating stories. Whether you want to learn about Harry, Hermione, or any other character, Wizopedia has you covered!
 
-        📜 Explore the **Spell Archive** to search for spells and uncover the secrets of the wizarding world.
+        📜 **Explore the Spell Archive**  
+        Dive into the **Spell Archive** to search for spells and uncover the secrets of the wizarding world. From simple charms to complex curses, discover how each spell works and the lore behind them.
 
-        🧙‍♂️ Feel free to talk to your favorite wizard! Ask questions, learn about their adventures, and dive deeper into the magic.
+        🧙‍♂️ **Talk to Your Favorite Wizard**  
+        Feel free to chat with your favorite wizard! Ask questions, learn about their adventures, and dive deeper into the magic. Whether you want to know about Dumbledore's wisdom or Ron's bravery, the conversation is just a click away.
 
         Let the journey begin!
         """)
 
-    elif page == "About Me":
+    elif page == "Dumbledore's Army":
         st.header("About Me")
         st.markdown("""
 
